@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package gps;
+
+message Request {
+	uint32_t	time = 1;
+	float		latitude = 2;
+	float		longitude = 3;
+  uint16_t  satellitesUsed = 4;
+  float   h_dilution = 5;
+  float altitude = 6;
+  float speed = 7;
+  float bearing = 8;
+}
